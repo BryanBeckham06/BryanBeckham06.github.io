@@ -19,10 +19,19 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background: url(/assets/img/background.jpg) no-repeat;
+    background-color: #060912;
     overflow-x: hidden;
 }
-
+::-webkit-scrollbar {
+  width: 18px;
+  background-color: #313131;
+}
+    ::-webkit-scrollbar-thumb {
+      width: 13px;
+      background-color: rebeccapurple;
+      border-radius: 10px;
+    }
 header {
 
     width: 100vw;
@@ -36,7 +45,7 @@ header {
 
 
 section {
-    max-width: 800px;
+    max-width: 1000px;
     height: auto;
     margin: 0 auto;
     color: white;
@@ -51,13 +60,13 @@ section {
 section h1 {
     font-size: large;
     text-align: center;
-    margin: ;
+    
 }
 .contatos {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 100px
 }
 /* nav */
 .logo {
@@ -132,12 +141,12 @@ section h1 {
 
 #about {
     width: 100vw;
-    height: 100vh;
+    height:70vh;
 }
 
 #projects {
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
 }
 
 #skills {
@@ -146,6 +155,7 @@ section h1 {
 }
 
 #contact {
+  margin-top: 200px;
     width: 100vw;
     height: 100vh;
 }
@@ -157,31 +167,28 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: black;
+    
     color: white;
     padding: 10px;
 }
 
 .project-container {
-    margin: auto;
-    display: grid;
-    grid-template-columns: 380px 380px;
-    width: 380px;
-    height: 380px;
-    flex-direction: row;
+    display: flex;
+    width: 1000px;
+    height: 580px;
     justify-content: space-around;
     align-items: center;
-    border-radius: 6px;
 }
 
 .card {
-    max-width: 380px;
-    min-height: 380px;
+    width: 380px;
+    height: 380px;
     z-index: 2;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     border:#757575 2px solid;
     margin: 15px;
+    margin-top: 100px;
 }
 
 a {
@@ -195,16 +202,7 @@ a {
     gap: 5px;
 }
 
-a:after {
-    content: "";
-    position: absolute;
-    background-color: #0391bf;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-}
+
 
 a:hover {
     color: #ffffff;
@@ -229,11 +227,13 @@ a:hover:after {
 }
 
 .skills .skills-row{
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
 }
 .skills-row .skills-column {
+    
     flex: 1 1 40rem;
 }
 
@@ -518,7 +518,7 @@ textarea {
     position: absolute;
     top: calc(50% - 25px);
     left: calc(50% - 30px);
-    background: -webkit-linear-gradient(top, #15aece 0%, #15aece 50%, #0391bf 50%, #0391bf 100%);
+    background: -webkit-linear-gradient(top, #ce15bf 0%, #ce15bf 50%, #ac129f 50%, #ac139f 100%);
     border-radius: 15px;
   }
   
@@ -743,7 +743,7 @@ textarea {
     border: none;
     background: white;
     border-radius: 5px 5px 5px 200px;;
-    box-shadow: rgba(201, 190, 190, 0.3) 0px 2px 5px -1px, rgba(201, 190, 190, 0.3).3) 0px 1px 3px -1px;
+   
     transition: .2s ease-in-out;
   }
   
@@ -758,8 +758,7 @@ textarea {
     outline: none;
     border: none;
     background: white;
-    border-radius: 5px 5px 200px; 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px 5px 200px;;
     transition: .2s ease-in-out;
   }
   
@@ -792,7 +791,7 @@ textarea {
   .card3:hover {
     cursor: pointer;
     scale: 1.1;
-    background-color: black;
+    background-color:#313131;
   }
   
   .card3:hover .github {
@@ -818,6 +817,17 @@ textarea {
     .card img {
       width: 300px; 
       height: 200px;
+      
+    }
+    .lgg img {
+      filter: invert(100%);
+    }
+    .lgg2 img {
+      width: 250px;
+      height: 180px;
+      filter: invert(50%);
+      margin-bottom: 20px;
+      
     }
     .text {
       margin:20px
