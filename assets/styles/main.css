@@ -178,6 +178,7 @@ footer {
     height: 580px;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .card {
@@ -186,9 +187,14 @@ footer {
     z-index: 2;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    border:#757575 2px solid;
+    border: transparent 3px solid;
     margin: 15px;
     margin-top: 100px;
+}
+.card:hover {
+  border: 3px solid #757575;
+  
+  transition: 2s linear;
 }
 
 a {
@@ -813,7 +819,11 @@ textarea {
       height: 60px;
       border-radius: 24px;
       margin-top: 5px;
+      transition: 2s;
+      font-size: 15px;
+      
     }
+    
     .card img {
       width: 300px; 
       height: 200px;
@@ -821,6 +831,10 @@ textarea {
     }
     .lgg img {
       filter: invert(100%);
+      width: 230px;
+      height: 120px;
+      margin-bottom: 38px;
+      margin-top: 40px;
     }
     .lgg2 img {
       width: 250px;
